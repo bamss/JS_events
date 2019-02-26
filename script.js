@@ -29,4 +29,28 @@ function editCard(){
         console.log(btn);
     })
 }
-editCard()
+ editCard()
+
+function reditCard(){
+    let btn = document.querySelector('body > main > div > div > div > div:nth-child(2) > div > div > div > div > button.btn.btn-sm.btn-outline-secondary');
+    let card_text = document.querySelector('body > main > div > div > div > div:nth-child(2) > div > div > p');
+    
+    btn.addEventListener("click", function(){
+        console.log(card_text)
+        card_text.classList.toggle("text-success");
+    })
+}
+reditCard()
+
+function fuckBoostrap(){
+    let nav = document.querySelector('body > header > div.navbar.navbar-dark.bg-dark.box-shadow > div');
+    let cdn  =   document.querySelector('head > link')
+    // dbclick
+    // disabled
+    
+    nav.addEventListener("dblclick" , function () {
+        cdn.disabled= true
+      })
+    
+}
+fuckBoostrap()
